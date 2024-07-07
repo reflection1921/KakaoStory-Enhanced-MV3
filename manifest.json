@@ -1,0 +1,27 @@
+{
+	"manifest_version": 3,
+	"name": "KakaoStory Enhanced",
+	"version": "1.0",
+    "background": {
+        "service_worker": "background.js"
+    },
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"css/*"
+			],
+			"matches": ["https://story.kakao.com/*"]
+		}
+	],
+	"content_scripts": [
+		{
+			"matches": ["https://story.kakao.com/*"],
+			"js": ["kakaostory.theme.js", "kakaostory.main.js"],
+            "run_at": "document_idle"
+		}
+	],
+    "permissions": [
+        "activeTab",
+		"storage"
+    ]
+}
