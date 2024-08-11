@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+._ksdark_cls {
+    background-color: var(--lighter-background-color) !important;
+    color: var(--text-color) !important;
+}
+.btn_com.btn_wh._enhanced_green_btn { background: #43b581 !important; }
+.mejs-container.mejs-kakao .mejs-controls .mejs-videodown-button {
+    top: -42px !important;
+    left: 14px !important;
+    width: 42px !important;
+    height: 42px !important;
+}
+.mejs-container.mejs-kakao .mejs-controls .mejs-videodown-button button {
+    width: 18px !important;
+    height: 18px !important;
+    background: url(https://raw.githubusercontent.com/reflection1921/KakaoStory-Enhanced/main/images/btn_download.png) !important;
+    margin: 10px 6px !important;
+    padding: 0 !important;
+}
+@keyframes shake { 0% { transform: translate(1px, 1px) rotate(0deg); } 10% { transform: translate(-1px, -2px) rotate(-1deg); } 20% { transform: translate(-3px, 0px) rotate(1deg); } 30% { transform: translate(3px, 2px) rotate(0deg); } 40% { transform: translate(1px, -1px) rotate(1deg); } 50% { transform: translate(-1px, 2px) rotate(-1deg); } 60% { transform: translate(-3px, 1px) rotate(0deg); } 70% { transform: translate(3px, 1px) rotate(-1deg); } 80% { transform: translate(-1px, -1px) rotate(1deg); } 90% { transform: translate(1px, 2px) rotate(0deg); } 100% { transform: translate(1px, -2px) rotate(-1deg); } }
+.shake_text { animation: shake 0.5s; animation-iteration-count: infinite; }
+@keyframes shake_s { 0% { transform: translate(0.5px, 0.5px) rotate(0deg); } 10% { transform: translate(-0.5px, -1px) rotate(-0.5deg); } 20% { transform: translate(-1.5px, 0px) rotate(0.5deg); } 30% { transform: translate(1.5px, 1px) rotate(0deg); } 40% { transform: translate(0.5px, -0.5px) rotate(0.5deg); } 50% { transform: translate(-0.5px, 1px) rotate(-0.5deg); } 60% { transform: translate(-1.5px, 0.5px) rotate(0deg); } 70% { transform: translate(1.5px, 0.5px) rotate(-0.5deg); } 80% { transform: translate(-0.5px, -0.5px) rotate(0.5deg); } 90% { transform: translate(0.5px, 1px) rotate(0deg); } 100% { transform: translate(0.5px, -1px) rotate(-0.5deg); } }
+.shake_text_s { animation: shake_s 0.5s; animation-iteration-count: infinite; }
+@keyframes shake_l { 0% { transform: translate(2px, 2px) rotate(0deg); } 10% { transform: translate(-2px, -4px) rotate(-2deg); } 20% { transform: translate(-6px, 0px) rotate(2deg); } 30% { transform: translate(6px, 4px) rotate(0deg); } 40% { transform: translate(2px, -2px) rotate(2deg); } 50% { transform: translate(-2px, 4px) rotate(-2deg); } 60% { transform: translate(-6px, 2px) rotate(0deg); } 70% { transform: translate(6px, 2px) rotate(-2deg); } 80% { transform: translate(-2px, -2px) rotate(2deg); } 90% { transform: translate(2px, 4px) rotate(0deg); } 100% { transform: translate(2px, -4px) rotate(-2deg); } }
+.shake_text_l { animation: shake_l 0.5s; animation-iteration-count: infinite; }
+@keyframes blink_ { 50% { opacity: 0; } }
+.blink_text { animation: blink_ 0.1s; animation-iteration-count: infinite; }
+.enhanced_kitty { position: absolute; margin-top: 5px; animation: enhanced_kitty_ani 40s linear infinite; width: 64px; image-rendering: pixelated; }
+@keyframes enhanced_kitty_ani { from {margin-left:0;} to {margin-left:100%;} }
+.enhanced_puppy { position: absolute; margin-top: 5px; animation: enhanced_puppy_ani 30s linear infinite; width: 64px; image-rendering: pixelated; }
+@keyframes enhanced_puppy_ani { from {margin-left:100%;} to {margin-left:0;} }
+.enhanced_puppy_image
+{
+    width: 64px;
+    height: 50px;
+    background-image: url(https://raw.githubusercontent.com/reflection1921/KakaoStory-Enhanced/main/images/dog_frame_1.png);
+    background-size: cover;
+    animation: enhanced_puppy_image_after 0.3s;
+    animation-iteration-count: infinite;
+    border: 0;
+}
+
+@keyframes enhanced_puppy_image_after
+{
+    50% {
+        background-image: url(https://raw.githubusercontent.com/reflection1921/KakaoStory-Enhanced/main/images/dog_frame_2.png);
+    }
+}
+
+.enhanced_power_mode_score {
+    position: fixed;
+    z-index: 100;
+    width: auto;
+    height: 0;
+    font: bold 49px 'Anton', sans-serif;
+    bottom: 0;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    transition: all 1.0s;
+    color: #cc0000;
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+}
+.enhanced_power_mode_score_enable { height: 64px; }
+.enhanced_activty_selected { border: 1px solid var(--text-highlight-color) !important; }
+.enhanced_layer_settings {
+    left: auto;
+    position: absolute;
+    top: 85px;
+    width: 578px;
+    padding-bottom: 85px;
+    margin-left: -289px;
+    z-index: 20;
+}
+.enhanced_settings_menu .link_menu
+{
+    border-top: 1px solid var(--background-border-color) !important;
+}
+
+.enhanced_sidebar_hidden
+{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.snb_story
+{
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.enhanced_sidebar_show
+{
+    margin-top: 10px;
+    position: fixed;
+    z-index: 51;
+    top: 65px;
+    right: 0;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.enhanced_sidebar_show_left
+{
+    margin-top: 10px;
+    position: fixed;
+    z-index: 51;
+    top: 65px;
+    left: 0;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.enhanced_sidebar_show_btn_to_left
+{
+    background-image: url(https://raw.githubusercontent.com/reflection1921/KakaoStory-Enhanced/main/images/btn_expand_sidebar_left.png) !important;
+    background-repeat: no-repeat !important;
+    width: 40px;
+    height: 40px;
+    display: block;
+
+}
+
+.enhanced_sidebar_show_btn_to_right
+{
+    background-image: url(https://raw.githubusercontent.com/reflection1921/KakaoStory-Enhanced/main/images/btn_expand_sidebar_right.png) !important;
+    background-repeat: no-repeat !important;
+    width: 40px;
+    height: 40px;
+    display: block;
+
+}
+
+.enhanced_settings_content_hidden
+{
+    display: none;
+}
+
+.enhanced_custom_gradient_container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.enhanced_custom_gradient_color_input
+{
+    width: 60px;
+    padding: 7px 10px 7px 10px;
+    border: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    outline: none;
+    text-align: center;
+    margin-left: 7px;
+}
+
+.enhanced_custom_gradient_slash_character
+{
+    padding: 7px 2px 7px 2px;
+    outline: none;
+    text-align: center;
+}
+
+.enhanced_custom_gradient_percent_input
+{
+    width: 40px;
+    padding: 7px 0 7px 10px;
+    border: 0;
+    outline: none;
+    text-align: center;
+    margin-right: 0;
+}
+
+.enhanced_custom_gradient_percent_character
+{
+    padding: 7px 10px 7px 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    outline: none;
+    text-align: center;
+    margin-right: 7px;
+}
+
+.enhanced_custom_gradient_degree_input
+{
+    width: 40px;
+    padding: 7px 0 7px 10px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: 0;
+    outline: none;
+    text-align: center;
+    margin-right: 0;
+}
+
+.enhanced_custom_gradient_degree_character
+{
+    padding: 7px 10px 7px 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    outline: none;
+    text-align: center;
+    margin-right: 7px;
+    background-color: white;
+}
+
+.write .inp_footer .bn_group_enhanced_left
+{
+    float: left;
+}
+
+.write .bn_group_enhanced_left .btn_com {
+    float: left;
+    height: 32px;
+    margin-left: 5px;
+    padding: 0 20px;
+    line-height: 32px;
+}
+
+/* Recommend Feed Block */
+.section.recommend {
+    display: none;
+}
